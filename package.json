@@ -1,0 +1,32 @@
+{
+  "name": "vestor-web",
+  "version": "1.1.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest",
+    "dev": "nodemon server/index.js --watch server",
+    "build": "next build",
+    "start": "NODE_ENV=production node server/index.js",
+    "analyze": "cross-env ANALYZE=1 next build",
+    "dev-api": "nodemon graphql/index.js --watch graphql",
+    "start-api": "NODE_ENV=production node graphql/index.js"
+  },
+  "dependencies": {
+    "apollo-boost": "^0.4.4",
+    "apollo-server-express": "^2.4.2",
+    "bcrypt": "^3.0.0",
+    "body-parser": "^1.19.0",
+    "dayjs": "^1.8.17",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-graphql": "^0.9.0",
+    "graphql": "^14.5.8",
+    "graphql-tools": "^4.0.6",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.15",
+    "mongodb": "^3.3.3",
+    "nodemailer": "^6.3.1",
+    "uuid": "^3.3.3"
+  }
+}
